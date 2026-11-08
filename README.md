@@ -53,6 +53,3 @@ make it executable (`chmod +x`) and run it. Konos offers **Update Now** when a
 new version is out.
 
 Konos's own code is under the [MIT licence](LICENSE).
-
-Konos was called VMP (Vibes Media Player) up to 0.5. A `pacman.conf` that
-still says `[vmp]` keeps working and moves over to the `konos` package.
