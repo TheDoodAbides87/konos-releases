@@ -3,6 +3,10 @@
 Releases of VMP, and its pacman repository. The source code lives in a
 separate repository; this one holds only the built packages.
 
+> **Early development.** VMP is a beta that changes often: features move,
+> settings may reset, and things can break between releases. Keep that in mind
+> before relying on it.
+
 ## What VMP is
 
 **VMP is an overhaul of VLC.** It is VLC media player with a new interface:
