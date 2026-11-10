@@ -23,8 +23,8 @@ Konos builds that redesign as a working player; each release works through a
 part of the video.
 
 - Playback engine: [VLC / libVLC](https://www.videolan.org/vlc/) by VideoLAN
-  and the VLC contributors (LGPL 2.1 or later). The AppImage bundles libVLC
-  and its plugins unchanged.
+  and the VLC contributors (LGPL 2.1 or later). The AppImage and the Mac app
+  bundle libVLC and its plugins unchanged.
 - Interface toolkit: [Qt 6](https://www.qt.io/) (LGPL 3); tags via
   [TagLib](https://taglib.org/).
 
@@ -51,5 +51,28 @@ Download `Konos-<version>-x86_64.AppImage` from the
 [latest release](https://github.com/TheDoodAbides87/konos-releases/releases/latest),
 make it executable (`chmod +x`) and run it. Konos offers **Update Now** when a
 new version is out.
+
+### macOS
+
+Needs a Mac with Apple silicon (M1 or later) and macOS 27.2 or later.
+
+Download `Konos-<version>-macos-arm64.dmg` from the
+[latest release](https://github.com/TheDoodAbides87/konos-releases/releases/latest),
+open it and drag **Konos** to **Applications**. It has libVLC and Qt inside;
+nothing else needs installing.
+
+Konos isn't notarized by Apple yet, so the first time you open it macOS says
+it can't check it for malicious software. Click **Done**, then go to
+**System Settings → Privacy & Security**, scroll down to the message about
+Konos and click **Open Anyway**. After that it opens normally.
+
+Konos offers **Update Now** when a new version is out: it downloads the new
+disk image and swaps the new Konos in when you quit. (Keep Konos in
+Applications, or another folder you can write to, for that to work; it can't
+update a copy running from the disk image.)
+
+Optional: with [Homebrew](https://brew.sh)'s `ffmpeg` installed
+(`brew install ffmpeg`), library thumbnails show a frame from each video and
+the subtitle timeline can read subtitles inside videos.
 
 Konos's own code is under the [MIT licence](LICENSE).
